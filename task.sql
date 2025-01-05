@@ -9,15 +9,6 @@ create TABLE Countries (
     PRIMARY KEY (ID)
 );
 
-create TABLE Warehouse (
-    ID INT,
-    WarehouseAmount INT,
-    WarehouseName VARCHAR(50),
-    WarehouseAddress VARCHAR(50),
-	FOREIGN KEY (ID) REFERENCES ProductInventory(ID) ON delete NO ACTION,
-    PRIMARY KEY (ID)
-);
-
 create TABLE ProductInventory (
     ID INT,
     ProductName VARCHAR(50),
@@ -28,7 +19,13 @@ create TABLE ProductInventory (
     PRIMARY KEY (ID)
 );
 
-
+create TABLE Warehouse (
+    ID INT,
+    WarehouseAmount INT,
+    WarehouseName VARCHAR(50),
+    WarehouseAddress VARCHAR(50),
+    PRIMARY KEY (ID)
+);
 
 -- Populate test data
 
