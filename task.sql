@@ -23,7 +23,6 @@ CREATE TABLE ProductInventory (
     WarehouseID INT,
     FOREIGN KEY (WarehouseID) REFERENCES Warehouse(ID) ON DELETE NO ACTION,
     CountryID INT,
-    FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE NO ACTION,
     PRIMARY KEY (ID)
 );
 
