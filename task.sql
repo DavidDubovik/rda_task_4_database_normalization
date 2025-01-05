@@ -1,13 +1,13 @@
+-- Create database and tables
+
 CREATE DATABASE ShopDB;
 USE ShopDB;
-
 
 CREATE TABLE Countries (
     ID INT,
     Name VARCHAR(50),
     PRIMARY KEY (ID)
 );
-
 
 CREATE TABLE Warehouse (
     ID INT,
@@ -29,10 +29,10 @@ CREATE TABLE ProductInventory (
 
 -- Populate test data
 
-INSERT INTO Countries (ID, Name)
-    VALUES (1, 'Country1');
-INSERT INTO Countries (ID, Name)
-    VALUES (2, 'Country2');
+INSERT INTO Countries (ID,Name)
+	VALUES (1, 'Country1');
+INSERT INTO Countries (ID,Name)
+	VALUES (2, 'Country2');
 
 INSERT INTO Warehouse (ID, WarehouseAmount, WarehouseName, WarehouseAddress)
     VALUES (1, 2, 'Warehouse-1', 'City-1, Street-1');
