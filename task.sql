@@ -32,14 +32,15 @@ insert into Countries (ID,Name)
 	values (1, 'Country1');
 insert into Countries (ID,Name)
 	values (2, 'Country2');
-    
-insert into ProductInventory (ID,ProductName, WarehouseID, CountryID)
-	values (1, 'AwersomeProduct',1, 1);
-insert into ProductInventory (ID,ProductName, WarehouseID, CountryID)
-	values (2, 'AwersomeProduct', 2, 2);
 
 insert into Warehouse (ID, WarehouseAmount, WarehouseName, WarehouseAddress)
 	values (1, 2, 'Warehouse-1', 'City-1, Street-1');
 insert into Warehouse (ID, WarehouseAmount, WarehouseName, WarehouseAddress)
 	values (2, 5, 'Warehouse-2', 'City-2, Street-2');
+
+
+insert into ProductInventory (ID,ProductName, WarehouseID, CountryID)
+	values (1, 'AwersomeProduct',1, 1);
+insert into ProductInventory (ID,ProductName, WarehouseID, CountryID)
+	values (2, 'AwersomeProduct', 2, 2);
 
